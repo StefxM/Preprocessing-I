@@ -130,34 +130,50 @@ table {
 * {
   box-sizing: border-box;
 }
-.navbartop {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-.aboutme {
-  display: flex;
-  flex-direction: column;
-  padding: 10%;
-  border: 5px dotted green;
-}
-h1 {
-  color: cyan;
-  font-size: larger;
-}
-h3 {
-  color: blue;
-}
-.banner {
-  width: 85%;
-  height: 35%;
-  justify-items: flex-start;
+* .mix1 {
+  color: yellow;
+  font-size: 20px;
 }
 .top {
   diplay: flex;
   justify-content: stretch;
 }
-.skills {
+.top .banner {
+  width: 55%;
+  height: 35%;
+  justify-content: stretch;
+}
+.top .navbartop {
   display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+h1 {
+  color: purple;
+  font-size: larger;
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
   padding: 10%;
+  border: 5px dotted purple;
+}
+.aboutme h2 {
+  color: purple;
+}
+.bottom {
+  display: flex;
+}
+.bottom .skills {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+.bottom .workhistory {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+.bottom h3 {
+  color: purple;
 }

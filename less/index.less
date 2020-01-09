@@ -53,38 +53,71 @@ table {
     box-sizing: border-box;
 }
 
-@impo: cyan;
+@impo: purple;
+@haha: teal;
+*// mixins
+.mix1 {
+	font: white;
+	font-size: 16px;
+}
 
-.navbartop {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-end;
+.top {
+	diplay: flex;
+	justify-content: stretch;
+
+	.banner {
+		width: 55%;
+		height: 35%;
+		justify-content: stretch;
+
+	.navbartop {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-end;
+		}
+	}
 }
-.aboutme {
-	display: flex;
-	flex-direction: column;
-	padding: 10%;
-	border: 5px dotted purple;
-}
+
 h1 {
 	color: @impo;
 	font-size: larger;
 }
 
-h3 {
-	color @impo;
+.aboutme {
+	display: flex;
+	flex-direction: column;
+	padding: 10%;
+	border: 5px dotted @impo;
+	
+
+	h2 {
+		color: @impo;
+	}
 }
 
-.banner {
-	width: 85%;
-	height: 35%;
-	justify-items: flex-start;
-}
-.top {
-	diplay: flex;
-	justify-content: stretch;
-}
-.skills {
+
+.bottom {
 	display: flex;
-	padding: 10%;
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		padding: 10%;
+		@mix1();
+
+		.workhistory {
+		display: flex;
+		flex-direction: column;
+		padding: 10%;
+	
+			h3 {
+				color: @impo;
+
+				@media (max-width: 500px) {
+					width: 80%;
+					background: black;
+				  }
+		}
+	}
 }
+
