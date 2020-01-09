@@ -53,6 +53,8 @@ table {
     box-sizing: border-box;
 }
 
+@impo: cyan;
+
 .navbartop {
 	display: flex;
 	justify-content: space-around;
@@ -62,24 +64,27 @@ table {
 	display: flex;
 	flex-direction: column;
 	padding: 10%;
-	border: 5px dotted green;
+	border: 5px dotted purple;
 }
 h1 {
-	color: cyan;
+	color: @impo;
 	font-size: larger;
 }
 
 h3 {
-	color: blue;
+	color @impo;
 }
+
 .banner {
-	width: 40%;
-}
-.banner2 {
-	width: 40%;
+	width: 85%;
+	height: 35%;
 	justify-items: flex-start;
 }
 .top {
 	diplay: flex;
-	flex-direction: row;
+	justify-content: stretch;
+}
+.skills {
+	display: flex;
+	padding: 10%;
 }

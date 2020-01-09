@@ -149,13 +149,15 @@ h3 {
   color: blue;
 }
 .banner {
-  width: 40%;
-}
-.banner2 {
-  width: 40%;
+  width: 85%;
+  height: 35%;
   justify-items: flex-start;
 }
 .top {
   diplay: flex;
-  flex-direction: row;
+  justify-content: stretch;
+}
+.skills {
+  display: flex;
+  padding: 10%;
 }
