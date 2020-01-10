@@ -131,32 +131,32 @@ table {
   box-sizing: border-box;
 }
 * .mix1 {
-  color: yellow;
-  font-size: 20px;
+  background: black;
+  color: white;
 }
 .top {
-  diplay: flex;
-  justify-content: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .top .banner {
   width: 55%;
   height: 35%;
-  justify-content: stretch;
-}
-.top .navbartop {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
 }
 h1 {
   color: purple;
   font-size: larger;
 }
+h3 {
+  color: teal;
+}
 .aboutme {
   display: flex;
   flex-direction: column;
   padding: 10%;
-  border: 5px dotted purple;
+  border: 20px dotted purple;
 }
 .aboutme h2 {
   color: purple;
@@ -164,16 +164,14 @@ h1 {
 .bottom {
   display: flex;
 }
+@media (max-width: 500px) {
+  .bottom {
+    background-color: black;
+    color: white;
+  }
+}
 .bottom .skills {
   display: flex;
   flex-direction: column;
-  padding: 10%;
-}
-.bottom .workhistory {
-  display: flex;
-  flex-direction: column;
-  padding: 10%;
-}
-.bottom h3 {
-  color: purple;
+  padding-right: 15%;
 }

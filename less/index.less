@@ -57,24 +57,22 @@ table {
 @haha: teal;
 *// mixins
 .mix1 {
-	font: white;
-	font-size: 16px;
+	color: green;
+	background-color:grey;
 }
 
 .top {
-	diplay: flex;
-	justify-content: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 
 	.banner {
 		width: 55%;
 		height: 35%;
-		justify-content: stretch;
-
-	.navbartop {
 		display: flex;
-		justify-content: space-around;
-		align-items: flex-end;
-		}
+		align-items: center;
+
 	}
 }
 
@@ -83,13 +81,16 @@ h1 {
 	font-size: larger;
 }
 
+h3 {
+	color: @haha;
+}
+
 .aboutme {
 	display: flex;
 	flex-direction: column;
 	padding: 10%;
-	border: 5px dotted @impo;
+	border: 20px dotted @impo;
 	
-
 	h2 {
 		color: @impo;
 	}
@@ -99,25 +100,18 @@ h1 {
 .bottom {
 	display: flex;
 
-	.skills {
-		display: flex;
-		flex-direction: column;
-		padding: 10%;
-		@mix1();
+	@media (max-width: 500px) {
+		background-color: black;
+		color: white;
 
-		.workhistory {
-		display: flex;
-		flex-direction: column;
-		padding: 10%;
-	
-			h3 {
-				color: @impo;
-
-				@media (max-width: 500px) {
-					width: 80%;
-					background: black;
-				  }
-		}
+		.skills {
+			display: flex;
+			flex-direction: column;
+			padding-right: 15%;
+		
 	}
 }
 
+footer {
+	@mix1();
+}
