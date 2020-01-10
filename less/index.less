@@ -56,16 +56,16 @@ table {
 @impo: purple;
 @haha: teal;
 *// mixins
-.mix1 {
-	color: green;
-	background-color:grey;
+
+.colores {
+	color: white;
+	background-color: grey;
 }
 
 .top {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 
 	.banner {
 		width: 55%;
@@ -108,10 +108,10 @@ h3 {
 			display: flex;
 			flex-direction: column;
 			padding-right: 15%;
-		
+		}
 	}
 }
 
 footer {
-	@mix1();
+	.colores();
 }

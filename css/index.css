@@ -130,9 +130,9 @@ table {
 * {
   box-sizing: border-box;
 }
-* .mix1 {
-  background: black;
-  color: white;
+* .footer-color {
+  color: green;
+  background-color: grey;
 }
 .top {
   display: flex;
@@ -169,9 +169,12 @@ h3 {
     background-color: black;
     color: white;
   }
+  .bottom .skills {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15%;
+  }
 }
-.bottom .skills {
-  display: flex;
-  flex-direction: column;
-  padding-right: 15%;
+.background {
+  background-color: green;
 }
